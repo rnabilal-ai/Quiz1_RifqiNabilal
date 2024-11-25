@@ -1,15 +1,15 @@
 <?php
 include("koneksi.php");
 
-$nidn = $_POST['nidn'];
-$nama = $_POST['nama'];
-$rumpun = $_POST['rumpun'];
-$tempat = $_POST['tempat'];
-$tanggal = $_POST['tanggal'];
-$email = $_POST['email'];
+$nik = $_POST['nidn'];
+$nm = $_POST['nama'];
+$rpn = $_POST['rumpun'];
+$tmpt = $_POST['tempat'];
+$tgl = $_POST['tanggal'];
+$eml = $_POST['email'];
 
 $simpan = "INSERT INTO form (nidn,nama,rumpun,tempat,tangga,email) 
-VALUES ('$nidn','$nama','$rumpun','$tempat','$tanggal','$email')";
+VALUES ('$nik','$nama','$rpn','$tmpt','$tgl','$eml')";
 
 mysqli_query($koneksi, $simpan)
 
